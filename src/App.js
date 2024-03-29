@@ -1,16 +1,18 @@
 import './App.css';
-import Login from './Component/Login';
+import Login from './Component/Login.js';
 import MainPage from './Component/MainPage';
-import ReservePage from './Component/ReservePage';
-import History from './Component/History';
-import Profile from './Component/Profile';
-import Booking from './Component/Booking';
-  console.log("Hello")
+import { BrowserRouter as Router,Route, Routes} from 'react-router-dom';
+  console.log("App is running")
 function App() {
   return (
-    <div className="App">
-          <Login/>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login></Login>}/>
+          <Route path="/MainPage" element ={<MainPage/>}></Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 
