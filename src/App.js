@@ -9,7 +9,7 @@ import Booking from './Component/Booking';
 function App() {
   return (
     <div className="App">
-          <ReservePage/>
+        <Profile></Profile>
     </div>
   );
 }

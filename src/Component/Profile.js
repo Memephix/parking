@@ -44,7 +44,7 @@ const Profile = () => {
       ) : (
         <ProfileDisplay username={username} email={email} />
       )}
-      <button onClick={handleSave}>{edit ? 'Save' : 'Edit'}</button>
+      <button onClick={handleSave}>{edit ? 'save' : 'Edit'}</button>
       <button onClick={handleDelete}>Delete</button>
       {deleteAction && <p>Delete Successful</p>}
     </div>
