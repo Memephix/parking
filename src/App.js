@@ -7,11 +7,15 @@ import Profile from './Component/Profile';
 import Booking from './Component/Booking';
   console.log("Hello")
 function App() {
+  console.log('eieieiieeieie');
+  
   return (
     <div className="App">
         <Profile></Profile>
     </div>
+    
   );
 }
 
 export default App;
+
