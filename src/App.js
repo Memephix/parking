@@ -6,11 +6,13 @@ import { BrowserRouter,Router,Route, Routes} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
   console.log("App is running")
 function App() {
+  console.log('eieieiieeieie');
+  
   return (
-    
-     <MainPage/>
 
+     <MainPage/>
   );
 }
 
 export default App;
+
