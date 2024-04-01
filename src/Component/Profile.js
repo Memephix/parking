@@ -9,9 +9,8 @@ const Profile = () => {
   const [deleteAction, setDeleteAction] = useState(false);
 
   const handleSave = () => {
-    // Assuming you want to save changes when edit is confirmed
     if (edit) {
-      setEdit(false); // Set edit mode to false
+      setEdit(false); 
       alert('Save Successful');
     } else {
       setEdit(true);
@@ -19,14 +18,12 @@ const Profile = () => {
   };
 
   const handleDelete = () => {
-    // Assuming you want to show a confirmation prompt before deletion
     const confirmDelete = window.confirm('Are you sure you want to delete this profile?');
     if (confirmDelete) {
-      // Perform deletion logic here
       setDeleteAction(true);
       setUsername('');
       setEmail('');
-      setEdit(false); // Set edit mode to false after deletion
+      setEdit(false); 
       alert('Delete Successful');
     }
   };
