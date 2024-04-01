@@ -1,17 +1,15 @@
 import './App.css';
-import Login from './Component/Login';
+import Login from './Component/Login.js';
 import MainPage from './Component/MainPage';
-import ReservePage from './Component/ReservePage';
-import History from './Component/History';
-import Profile from './Component/Profile';
-import Booking from './Component/Booking';
-  console.log("Hello")
+import History from './Component/History.js'
+import { BrowserRouter,Router,Route, Routes} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+  console.log("App is running")
 function App() {
   return (
-    <div className="App">
-          <History/>
-    </div>
+     <MainPage/>
   );
 }
 
 export default App;
+
